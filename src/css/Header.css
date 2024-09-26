@@ -1,0 +1,28 @@
+/* Style pour la barre de navigation entière */
+.navbar {
+    font-family: 'Arial', sans-serif; /* Change la famille de polices */
+    font-size: 18px; /* Change la taille de la police globale */
+}
+
+/* Style pour la marque (Navbar.Brand) */
+.navbar-brand {
+    font-size: 24px; /* Taille de la police pour le texte 'Rutra' */
+    font-weight: bold; /* Mettre en gras le texte de la marque */
+    color: #000; /* Couleur noire pour la marque */
+}
+
+/* Style pour les liens de navigation (Nav.Link) */
+.nav-link {
+    font-size: 18px; /* Taille de la police des liens */
+    color: #555; /* Couleur personnalisée pour les liens */
+}
+
+.nav-link:hover {
+    color: #000; /* Couleur des liens au survol */
+}
+
+/* Espacement entre les éléments de la barre de navigation */
+.me-auto {
+    margin-right: 20px; /* Ajuste l'espacement entre les éléments */
+}
+
