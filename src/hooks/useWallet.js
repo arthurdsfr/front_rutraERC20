@@ -48,6 +48,12 @@ export const useWallet = () => {
             console.error('Error connecting wallet', err);
         }
     };
+    const disconnectedWallet = () => {
+        setWalletAddress(null);
+        setIsConnected(false);
+    };
 
-    return { walletAddress, isConnected, connectWallet };
+    return { walletAddress, isConnected, connectWallet, disconnectedWallet };
 };
+
+export default useWallet;
