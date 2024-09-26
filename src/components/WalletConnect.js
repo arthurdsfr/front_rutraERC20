@@ -1,6 +1,6 @@
 import React from 'react';
 import { useWallet } from '../hooks/useWallet'; // Importation du hook personnalisé
-
+import '../css/WalletConnect.css';
 const WalletConnect = () => {
     // Extraction de l'état du portefeuille et de la fonction de connexion depuis le hook
     const { walletAddress, isConnected, connectWallet, disconnectedWallet } = useWallet();
@@ -12,11 +12,11 @@ const WalletConnect = () => {
                 <div>
                     <p>Wallet connected: {walletAddress}</p>
                     {/* Disconnect Button */}
-                    <button onClick={disconnectedWallet}>Disconnect Wallet</button>
+                    <button onClick={disconnectedWallet} className="disconnect-button">Disconnect Wallet</button>
                 </div>
             ) : (
                 //Connexion Button
-                <button onClick={connectWallet}>Connect Wallet</button>
+                <button onClick={connectWallet} className="connect-button">Connect Wallet</button>
             )}
         </div>
     );
