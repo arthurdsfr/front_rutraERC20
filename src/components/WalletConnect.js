@@ -10,7 +10,7 @@ const WalletConnect = () => {
             {/* Affichage de l'adresse du portefeuille ou du bouton de connexion */}
             {isConnected ? (
                 <div>
-                    <p>Wallet connected: {walletAddress}</p>
+                    <p className="wallet-address">Wallet connected: {walletAddress}</p>
                     {/* Disconnect Button */}
                     <button onClick={disconnectedWallet} className="disconnect-button">Disconnect Wallet</button>
                 </div>

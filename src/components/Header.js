@@ -2,6 +2,8 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import '../css/Header.css';
+import WalletConnect from './WalletConnect';
+
 function Header() {
     return (
         <Navbar bg="dark" data-bs-theme="dark">
@@ -12,6 +14,7 @@ function Header() {
                     <Nav.Link href="#features">Features</Nav.Link>
                     <Nav.Link href="#pricing">Pricing</Nav.Link>
                 </Nav>
+                < WalletConnect/>
             </Container>
         </Navbar>
     );

@@ -1,17 +1,37 @@
-.wallet-container {
-    text-align: center;
-    margin: 20px;
+/* Exemples de styles pour WalletConnect */
+
+/* Style pour l'adresse du portefeuille */
+.wallet-address {
+    color: white; /* Change la couleur du texte */
+    font-style: italic; /* Met le texte en italique */
 }
 
-.connect-button, .disconnect-button {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+/* Style pour le bouton de connexion */
+.connect-button {
+    background-color: #0034ff; /* Couleur de fond verte */
+    color: white; /* Couleur du texte */
+    border: none; /* Pas de bordure */
+    padding: 10px 20px; /* Espacement interne */
+    text-align: center; /* Centre le texte */
+    text-decoration: none; /* Pas de soulignement */
+    display: inline-block; /* Permet le dimensionnement */
+    font-size: 16px; /* Taille de la police */
+    margin: 4px 2px; /* Marge */
+    cursor: pointer; /* Curseur pointer */
+    border-radius: 4px; /* Coins arrondis */
 }
 
-.connect-button:hover, .disconnect-button:hover {
-    background-color: #0056b3;
+/* Style pour le bouton de déconnexion */
+.disconnect-button {
+    background-color: #f44336; /* Couleur de fond rouge */
+    color: white; /* Couleur du texte */
+    border: none; /* Pas de bordure */
+    padding: 10px 20px; /* Espacement interne */
+    text-align: center; /* Centre le texte */
+    text-decoration: none; /* Pas de soulignement */
+    display: inline-block; /* Permet le dimensionnement */
+    font-size: 16px; /* Taille de la police */
+    margin: 4px 2px; /* Marge */
+    cursor: pointer; /* Curseur pointer */
+    border-radius: 4px; /* Coins arrondis */
 }
