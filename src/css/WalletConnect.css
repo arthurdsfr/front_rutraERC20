@@ -2,8 +2,12 @@
 
 /* Style pour l'adresse du portefeuille */
 .wallet-address {
-    color: white; /* Change la couleur du texte */
-    font-style: italic; /* Met le texte en italique */
+    color: white;
+    max-width: 200px; /* Limite la largeur de l'affichage de l'adresse */
+    white-space: nowrap; /* Empêche le texte de passer à la ligne suivante */
+    overflow: hidden; /* Masque le texte qui dépasse la largeur maximale */
+    text-overflow: ellipsis; /* Ajoute des points de suspension si le texte dépasse */
+    font-style: italic; /* Italique pour le texte de l'adresse */
 }
 
 /* Style pour le bouton de connexion */

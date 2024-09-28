@@ -1,28 +1,15 @@
-/* Style pour la barre de navigation entière */
-.navbar {
-    font-family: 'Arial', sans-serif; /* Change la famille de polices */
-    font-size: 18px; /* Change la taille de la police globale */
+/* Style pour la police futuriste */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap'); /* Exemples de police futuriste */
+
+/* Applique la police futuriste à la marque Navbar */
+.futuristic-font {
+    font-family: 'Orbitron', sans-serif; /* Change la police */
+    font-size: 28px; /* Taille du texte Rutra */
+    color: #ffffff; /* Couleur blanche */
+    font-weight: bold; /* Rend le texte plus épais */
 }
 
-/* Style pour la marque (Navbar.Brand) */
-.navbar-brand {
-    font-size: 24px; /* Taille de la police pour le texte 'Rutra' */
-    font-weight: bold; /* Mettre en gras le texte de la marque */
-    color: #000; /* Couleur noire pour la marque */
+/* Assure que le bouton WalletConnect est à droite */
+.ms-auto {
+    margin-left: auto; /* Déplace l'élément à droite */
 }
-
-/* Style pour les liens de navigation (Nav.Link) */
-.nav-link {
-    font-size: 18px; /* Taille de la police des liens */
-    color: #555; /* Couleur personnalisée pour les liens */
-}
-
-.nav-link:hover {
-    color: #000; /* Couleur des liens au survol */
-}
-
-/* Espacement entre les éléments de la barre de navigation */
-.me-auto {
-    margin-right: 20px; /* Ajuste l'espacement entre les éléments */
-}
-
