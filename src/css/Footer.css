@@ -1,0 +1,45 @@
+/* Footer Styling */
+.footer {
+    background-color: #020202;
+    color: #fff;
+    text-align: left;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: flex-start; /* Aligne tout à gauche */
+    align-items: center;
+    padding: 0 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%; /* Assure que la container prend toute la largeur */
+}
+
+.footer-content {
+    font-size: 18px; /* Augmente la taille de la police */
+    font-style: italic; /* Met le texte en italique */
+    flex-grow: 1; /* Permet au contenu de prendre l'espace disponible */
+}
+
+.footer-follow {
+    font-weight: bold;
+}
+
+.footer-social {
+    display: flex; /* Aligne les icônes des réseaux sociaux horizontalement */
+}
+
+.footer-social a {
+    color: #fff;
+    font-size: 24px;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+    color: #61dafb;
+}

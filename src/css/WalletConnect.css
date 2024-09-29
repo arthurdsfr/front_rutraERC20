@@ -1,4 +1,9 @@
-/* Exemples de styles pour WalletConnect */
+/* Conteneur global pour aligner l'adresse et le bouton */
+.wallet-container {
+    display: flex; /* Utilise Flexbox pour aligner les éléments en ligne */
+    align-items: center; /* Centre verticalement l'adresse et le bouton */
+    justify-content: flex-end; /* Aligne les éléments à droite */
+}
 
 /* Style pour l'adresse du portefeuille */
 .wallet-address {
@@ -8,11 +13,12 @@
     overflow: hidden; /* Masque le texte qui dépasse la largeur maximale */
     text-overflow: ellipsis; /* Ajoute des points de suspension si le texte dépasse */
     font-style: italic; /* Italique pour le texte de l'adresse */
+    margin-right: 10px; /* Ajoute de l'espace entre l'adresse et le bouton */
 }
 
 /* Style pour le bouton de connexion */
 .connect-button {
-    background-color: #0034ff; /* Couleur de fond verte */
+    background-color: #0034ff; /* Couleur de fond bleue */
     color: white; /* Couleur du texte */
     border: none; /* Pas de bordure */
     padding: 10px 20px; /* Espacement interne */
