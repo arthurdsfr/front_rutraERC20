@@ -1,10 +1,22 @@
-/* src/components/Balance.css */
 .balance-container {
     text-align: center;
     margin-top: 20px;
-    background-color: #f1f1f1;
-    padding: 15px;
-    border-radius: 8px;
-    font-size: 18px;
+    background: linear-gradient(135deg, #0636fc, #00010a); /* Dégradé futuriste */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Ombre pour le relief */
+    font-size: 24px; /* Augmenter la taille de la police pour plus de visibilité */
     font-weight: bold;
+    color: #ffffff; /* Couleur du texte en blanc */
+    transition: transform 0.3s, box-shadow 0.3s; /* Effet de transition pour l'animation */
+}
+
+.balance-container:hover {
+    transform: translateY(-5px); /* Légère élévation au survol */
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.3); /* Ombre plus marquée au survol */
+}
+
+.balance-container h3 {
+    margin: 0; /* Supprime les marges par défaut */
+    font-size: 26px; /* Augmente la taille de la police du titre */
 }

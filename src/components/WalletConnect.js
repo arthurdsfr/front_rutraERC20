@@ -4,7 +4,6 @@ import '../css/WalletConnect.css';
 const WalletConnect = () => {
     // Extraction de l'état du portefeuille et de la fonction de connexion depuis le hook
     const { walletAddress, isConnected, connectWallet, disconnectedWallet } = useWallet();
-
     return (
         <div>
             {/* Affichage de l'adresse du portefeuille ou du bouton de connexion */}

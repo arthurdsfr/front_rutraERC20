@@ -1,0 +1,30 @@
+/* HomePage.css */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap'); /* Exemples de police futuriste */
+
+.homepage-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centre les éléments horizontalement */
+    justify-content: flex-start; /* Centre les éléments verticalement */
+    height: 100vh; /* Prend toute la hauteur de la fenêtre */
+    background: linear-gradient(180deg, #0f1b29, #1a1a2e); /* Dégradé du bleu foncé au noir */
+    color: #ffffff; /* Texte en blanc pour le contraste */
+    font-family: 'Arial', sans-serif; /* Police moderne */
+    text-align: center; /* Centre le texte */
+    padding: 20px; /* Espacement autour du contenu */
+}
+
+.homepage-container h1 {
+    font-family: 'Orbitron', sans-serif; /* Change la police */
+    font-size: 3rem; /* Taille de police pour le titre */
+    margin-bottom: 20px; /* Espacement en bas du titre */
+    text-shadow: 0 0 10px rgba(3, 44, 208, 0.7); /* Ombre portée lumineuse pour le titre */
+}
+
+.homepage-container p {
+    font-size: 1.5rem; /* Taille de police pour le paragraphe */
+    margin-bottom: 40px; /* Espacement en bas du paragraphe */
+    opacity: 0.8; /* Légère transparence pour un effet futuriste */
+}
+
+

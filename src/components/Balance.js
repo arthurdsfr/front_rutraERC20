@@ -3,11 +3,14 @@ import { ethers } from 'ethers';
 import '../css/Balance.css'; // Importer le fichier CSS pour le style
 
 const Balance = ({ contractAddress, abi, userAddress }) => {
-    const [balance, setBalance] = useState('0');
+    const [balance, setBalance] = useState('Connect Wallet');
 
     useEffect(() => {
         const fetchBalance = async () => {
-            if (!userAddress) return; // Ne rien faire si l'utilisateur n'est pas connecté
+            if (!userAddress) {
+                setBalance('Connect Wallet');
+                return;
+            } // Ne rien faire si l'utilisateur n'est pas connecté
 
             const provider = new ethers.BrowserProvider(window.ethereum);
             const contract = new ethers.Contract(contractAddress, abi, provider);
@@ -25,7 +28,7 @@ const Balance = ({ contractAddress, abi, userAddress }) => {
 
     return (
         <div className="balance-container">
-            <h3>Your balance : {balance} RUTRA</h3>
+            <h3> Balance : {balance} RUTRA</h3>
         </div>
     );
 };
