@@ -1,11 +1,18 @@
 // src/pages/HomePage.js
-import React from 'react';import { useState } from 'react';
+import React from 'react';import { useState,useEffect } from 'react';
 import Header from "./Header";
 import Footer from "./Footer";
 import Balance from "./Balance";
 import { useWallet } from '../hooks/useWallet';
 import '../css/HomePage.css';
 function HomePage() {
+
+    const [splitText, setSplitText] = useState([]);
+
+    useEffect(() => {
+        const text = "Welcome to Rutra App";
+        setSplitText(text.split(""));
+    }, []);
 
     const { walletAddress, isConnected } = useWallet();  //Address of the user from the wallet Button
     const contractAddress = "0x5F1C0392Da98900b1747ecf4B681FbEFA3083859";
@@ -15,8 +22,13 @@ function HomePage() {
         <div>
             <Header/>
             <div className="homepage-container">
-                <h1>Welcome to Rutra App</h1>
-                <p>This is the homepage of your cryptocurrency app!</p>
+                <h1> {splitText.map((char, index) => (
+                    <span key={index} className="split-text">
+                        {char === " " ? "\u00A0" : char} {/* Gère les espaces */}
+                    </span>
+                ))}
+                </h1>
+                <p>This is the homepage of my cryptocurrency app !</p>
 
                 {/* Afficher la balance si l'utilisateur est connecté */}
                 {isConnected && walletAddress && (

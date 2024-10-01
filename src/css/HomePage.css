@@ -1,24 +1,37 @@
 /* HomePage.css */
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap'); /* Exemples de police futuriste */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap'); /* Importation de la police futuriste */
 
 .homepage-container {
     display: flex;
     flex-direction: column;
     align-items: center; /* Centre les éléments horizontalement */
-    justify-content: flex-start; /* Centre les éléments verticalement */
+    justify-content: flex-start; /* Aligne les éléments en haut */
     height: 100vh; /* Prend toute la hauteur de la fenêtre */
     background: linear-gradient(180deg, #0f1b29, #1a1a2e); /* Dégradé du bleu foncé au noir */
     color: #ffffff; /* Texte en blanc pour le contraste */
-    font-family: 'Arial', sans-serif; /* Police moderne */
+    font-family: 'Arial', sans-serif; /* Police moderne pour le reste du texte */
     text-align: center; /* Centre le texte */
     padding: 20px; /* Espacement autour du contenu */
+    overflow: hidden; /* Masque le texte qui sort de l'écran */
 }
 
 .homepage-container h1 {
-    font-family: 'Orbitron', sans-serif; /* Change la police */
+    font-family: 'Orbitron', sans-serif; /* Applique la police Orbitron au titre */
     font-size: 3rem; /* Taille de police pour le titre */
     margin-bottom: 20px; /* Espacement en bas du titre */
-    text-shadow: 0 0 10px rgba(3, 44, 208, 0.7); /* Ombre portée lumineuse pour le titre */
+    display: inline-block;
+}
+
+/* Créer une animation au survol des lettres */
+.homepage-container h1 span {
+    display: inline-block; /* Chaque lettre est traitée individuellement */
+    transition: transform 0.3s ease-in-out; /* Transition douce */
+    cursor: pointer; /* Change le curseur pour indiquer que c'est interactif */
+}
+
+.homepage-container h1 span:hover {
+    transform: translateY(-5px) rotate(5deg); /* Légère montée et rotation */
+    color: #bed3ff; /* Changement de couleur au survol pour un effet futuriste */
 }
 
 .homepage-container p {
@@ -26,5 +39,3 @@
     margin-bottom: 40px; /* Espacement en bas du paragraphe */
     opacity: 0.8; /* Légère transparence pour un effet futuriste */
 }
-
-
