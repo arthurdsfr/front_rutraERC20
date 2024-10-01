@@ -1,0 +1,45 @@
+.send-token-container {
+    background: linear-gradient(90deg,#010936, #0636fc); /* Dégradé futuriste */
+    color: #ffffff; /* Texte en blanc pour le contraste */
+    padding: 20px; /* Ajoute du padding interne */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre pour un effet de profondeur */
+}
+
+.send-token-title {
+    font-size: 24px; /* Taille de la police pour le titre */
+    margin-bottom: 15px; /* Marge en bas du titre */
+}
+
+.send-token-input {
+    width: 100%; /* Prend toute la largeur disponible */
+    padding: 10px; /* Padding interne pour l'input */
+    margin: 10px 0; /* Marge en haut et en bas */
+    border: 1px solid #007bff; /* Bordure bleue */
+    border-radius: 4px; /* Coins arrondis */
+    background-color: #2a2a2a; /* Fond de l'input plus clair */
+    color: #ffffff; /* Texte en blanc */
+}
+
+.send-token-input::placeholder {
+    color: #cccccc; /* Couleur du texte du placeholder */
+}
+
+.send-token-button {
+    background-color: #007bff; /* Couleur bleue pour le bouton */
+    color: #ffffff; /* Texte en blanc */
+    padding: 10px; /* Padding interne pour le bouton */
+    border: none; /* Pas de bordure */
+    border-radius: 4px; /* Coins arrondis */
+    cursor: pointer; /* Curseur de pointer pour indiquer que c'est cliquable */
+    transition: background-color 0.3s; /* Transition douce pour le changement de couleur */
+}
+
+.send-token-button:hover {
+    background-color: #0056b3; /* Couleur bleue plus foncée au survol */
+}
+
+.send-token-status {
+    margin-top: 15px; /* Marge en haut pour séparer le statut du reste */
+    font-size: 16px; /* Taille de la police pour le statut */
+}

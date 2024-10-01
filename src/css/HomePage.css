@@ -39,3 +39,18 @@
     margin-bottom: 40px; /* Espacement en bas du paragraphe */
     opacity: 0.8; /* Légère transparence pour un effet futuriste */
 }
+.transaction-container {
+    display: flex; /* Utilise Flexbox pour aligner les éléments horizontalement */
+    justify-content: space-between; /* Espace les éléments sur la largeur disponible */
+    width: 100%; /* Prend toute la largeur de la page */
+    max-width: 1200px; /* Limite la largeur pour un rendu plus propre */
+    margin: 20px 0; /* Marge autour de la zone des transactions */
+}
+
+.balance-container, .send-token-container {
+    flex: 1; /* Chaque composant prend une part égale de l'espace disponible */
+    margin: 20px; /* Ajoute un espace entre les deux composants */
+    padding: 20px; /* Ajoute un padding interne pour un meilleur aspect */
+    border: 1px solid #020202; /* Ajoute une bordure pour mieux définir les sections */
+    border-radius: 8px; /* Arrondit les coins */
+}

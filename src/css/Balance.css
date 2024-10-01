@@ -1,7 +1,7 @@
 .balance-container {
     text-align: center;
     margin-top: 20px;
-    background: linear-gradient(135deg, #0636fc, #00010a); /* Dégradé futuriste */
+    background: linear-gradient(90deg, #0636fc, #010936); /* Dégradé futuriste */
     padding: 20px;
     border-radius: 15px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Ombre pour le relief */

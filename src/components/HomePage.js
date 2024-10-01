@@ -3,6 +3,7 @@ import React from 'react';import { useState,useEffect } from 'react';
 import Header from "./Header";
 import Footer from "./Footer";
 import Balance from "./Balance";
+import SendToken from "./SendToken";
 import { useWallet } from '../hooks/useWallet';
 import '../css/HomePage.css';
 function HomePage() {
@@ -32,7 +33,14 @@ function HomePage() {
 
                 {/* Vérifier si l'utilisateur est connecté et afficher un message si ce n'est pas le cas */}
                 {isConnected && walletAddress ? (
-                    <Balance contractAddress={contractAddress} abi={abi} userAddress={walletAddress} />
+                    <div className="transaction-container">
+                        <div className="balance-container">
+                            <Balance contractAddress={contractAddress} abi={abi} userAddress={walletAddress}/>
+                        </div>
+                        <div className="send-token-container">
+                            <SendToken userAddress={walletAddress} contractAddress={contractAddress} abi={abi}/>
+                        </div>
+                    </div>
                 ) : (
                     <p>Please connect your wallet to see your balance.</p> // Message en cas de déconnexion
                 )}
