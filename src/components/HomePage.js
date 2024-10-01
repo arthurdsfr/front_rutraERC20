@@ -30,11 +30,11 @@ function HomePage() {
                 </h1>
                 <p>This is the homepage of my cryptocurrency app !</p>
 
-                {/* Afficher la balance si l'utilisateur est connecté */}
-                {isConnected && walletAddress && (
-                    <div>
-                        <Balance contractAddress={contractAddress} abi={abi} userAddress={walletAddress}/>
-                    </div>
+                {/* Vérifier si l'utilisateur est connecté et afficher un message si ce n'est pas le cas */}
+                {isConnected && walletAddress ? (
+                    <Balance contractAddress={contractAddress} abi={abi} userAddress={walletAddress} />
+                ) : (
+                    <p>Please connect your wallet to see your balance.</p> // Message en cas de déconnexion
                 )}
             </div>
             <Footer/>
