@@ -19,29 +19,31 @@ const SendToken = ({ userAddress, contractAddress, abi }) => {
             const contract = new ethers.Contract(contractAddress,abi, signer);
             const tx = await contract.transfer(recipientAddress, ethers.parseEther(amount))
 
-            setStatus('Transaction envoyée avec succès. Hash: ' + tx.hash);
+            setStatus('Succed : Hash: ' + tx.hash);
         } catch (error) {
             setStatus('Erreur lors de l’envoi de la transaction : ' + error.message);
         }
     };
 
     return (
-        <div>
-            <h3>Send Transaction</h3>
+        <div className="send-token-container">
+            <h3 className="send-token-title">Send Transaction</h3>
             <input
                 type="text"
                 placeholder="Recipient Address"
                 value={recipientAddress}
                 onChange={(e) => setRecipientAddress(e.target.value)}
+                className="send-token-input"
             />
             <input
                 type="text"
                 placeholder="Amount (in RUTRA)"
                 value={amount}
                 onChange={(e) => setAmount(e.target.value)}
+                className="send-token-input"
             />
-            <button onClick={sendTransaction}>Send</button>
-            <p>{status}</p>
+            <button onClick={sendTransaction} className="send-token-button">Send</button>
+            <p className="send-token-status">{status}</p>
         </div>
     );
 };

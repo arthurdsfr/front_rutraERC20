@@ -4,9 +4,7 @@
     color: #fff;
     text-align: left;
     padding: 20px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    width: 100%; /* Assure que le footer prend toute la largeur */
 }
 
 .footer-container {
@@ -15,7 +13,7 @@
     align-items: center;
     padding: 0 20px;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0 auto; /* Centrer le conteneur */
     width: 100%; /* Assure que la container prend toute la largeur */
 }
 
@@ -42,4 +40,17 @@
 
 .footer-social a:hover {
     color: #61dafb;
+}
+
+/* Styles pour le conteneur principal */
+.app-container {
+    display: flex;              /* Utilise Flexbox */
+    flex-direction: column;     /* Colonne pour les enfants */
+    min-height: 100vh;         /* Prend toute la hauteur de la fenêtre */
+}
+
+/* Styles pour le contenu */
+.content {
+    flex: 1;                   /* Prend tout l'espace restant */
+    padding-bottom: 80px;     /* Ajoute de l'espace pour le footer */
 }
