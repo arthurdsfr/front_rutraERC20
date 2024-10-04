@@ -4,6 +4,7 @@ import Header from "./Header";
 import Footer from "./Footer";
 import Balance from "./Balance";
 import SendToken from "./SendToken";
+import TransactionHistory from "./TransactionHistory";
 import { useWallet } from '../hooks/useWallet';
 import '../css/HomePage.css';
 function HomePage() {
@@ -36,6 +37,7 @@ function HomePage() {
                     <div className="transaction-container">
                         <div className="balance-container">
                             <Balance contractAddress={contractAddress} abi={abi} userAddress={walletAddress}/>
+                            <TransactionHistory contractAddress={contractAddress} abi={abi} userAddress={walletAddress} />
                         </div>
                         <div className="send-token-container">
                             <SendToken userAddress={walletAddress} contractAddress={contractAddress} abi={abi}/>
