@@ -12,6 +12,28 @@
     background: linear-gradient(90deg, #0636fc, #010936);
 }
 
+.copy-button {
+    font-size: 12px; /* Diminuer la taille de la police */
+    padding: 5px 10px; /* Ajuster l'espace interne du bouton */
+    margin-left: 10px; /* Ajouter un espace entre le texte et le bouton */
+    background-color: #ffffff; /* Couleur de fond blanche */
+    color: #0636fc; /* Couleur du texte en bleu futuriste */
+    border: 1px solid #0636fc; /* Bordure bleue pour correspondre au style futuriste */
+    border-radius: 5px; /* Bords arrondis */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; /* Transition pour hover */
+}
+
+.copy-button:hover {
+    background-color: #0636fc; /* Change la couleur de fond au survol */
+    color: #ffffff; /* Change la couleur du texte au survol */
+    transform: scale(1.05); /* Légère mise en valeur au survol */
+}
+
+.copy-button:active {
+    transform: scale(0.95); /* Effet d'enfoncement lorsqu'on clique */
+}
+
 .transaction-history li {
     padding: 10px;
     border-bottom: 1px solid #ddd;
